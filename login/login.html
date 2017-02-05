@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login and Sign Up</title>
+		<link rel="stylesheet" href="css/login_css.css">
+	</head>
+	<body>
+		<div class="cotn_principal">
+			<div class="cotn_content">
+				<div class="cotn_login">
+					<div class="col-md-login">
+						<div class="cotn_login_opcity">
+							<h2>LOGIN</h2>
+							<p>亲，要登录噢~</p>
+							<button class="btn_login" onclick="can_login()">LOGIN</button>
+						</div>
+					</div>
+					<div class="col-md-sign">
+						<div class="cotn_sign_opcity">
+							<h2>Sign Up</h2>
+							<p>哈哈，来注册一个账号吧！</p>
+							<button class="btn_sign" onclick="can_sign()">Sign Up</button>
+						</div>
+					</div>
+				</div>
+				<div class="cotn_background">
+					<div class="cotn_back_img">
+						<img src="../homework/src/6.jpeg" alt="" />
+					</div>
+				</div>
+				<div class="cotn_form">
+					<div class="cotn_back">
+						<img src="../homework/src/6.jpeg" alt="" />						
+					</div>
+					<div class="cotn_form_login">
+						<a href="#" onclick="ocu_login_sign_up()">
+							<i class="material-icon">&#xE5C4;</i>
+						</a>
+						<h2>LOGIN</h2>
+						<input type="text" placeholder="Email" />
+						<input type="text" placeholder="Password" />
+						<button class="btn_login" onclick="can_login()">LOGIN</button>
+					</div>
+					<div class="cotn_form_sign">
+						<a href="#" onclick="ocu_login_sign_up()">
+							<i class="material-icon">&#xE5C4;</i>
+						</a>
+						<h2>Sign Up</h2>
+						<input type="text" placeholder="Email" />
+						<input type="text" placeholder="User"  />
+						<input type="text" placeholder="Password" />
+						<input type="text" placeholder="Confirm Password" />
+						<button class="btn_login" onclick="can_sign_up()">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/login.js"></script>
+	</body>
+</html>

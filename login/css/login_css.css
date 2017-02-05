@@ -1,0 +1,264 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+h2, button{
+	font-family: "微软雅黑";
+}
+.cotn_principal{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #AAC4BC;
+	background: linear-gradient(135deg, #aac4bc 0%,#eca8a8 100%,#eed5a9 100%);
+}
+.cotn_content{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.cotn_login{
+	position: relative;
+	width: 640px;
+	left: 50%;
+	margin-left: -320px;
+}
+.cotn_background, .cotn_form{
+	margin-left: 360px;
+}
+.cotn_background{
+	position: relative;
+	float: left;
+	width: 640px;
+	height: 280px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	margin-top: 100px;
+	box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+}
+.cotn_form{
+	position: absolute;
+	overflow: hidden;
+	top: 100px;
+	left: 0px;
+	width: 320px;
+	height: 280px;
+	background-color: #EEEEEE;
+	transition: all 0.5s;
+}
+.cotn_back_img{
+	position: absolute;
+  	width: 950px;
+	top:-80px;
+  	left: -116px;
+}
+.cotn_back_img > img {
+	width: 100%;
+ 	-webkit-filter: grayscale(100%);     
+ 	filter: grayscale(100%);
+	opacity: 0.2;
+	animation-name: animar_fondo;
+ 	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.cotn_back{
+	position: absolute;
+  	width: 950px;
+	top:-80px;
+  	left: -116px;
+}
+.cotn_back > img {
+	width: 100%;
+	opacity: 0.3;
+	animation-name: animar_fondo;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.cotn_login{
+	position: absolute;
+ 	width: 640px;
+  	height: 280px;
+  	top: 100px;
+	z-index: 1;
+}
+.col_md_login {
+  	position: relative;
+  	float: left;
+  	width: 50%;
+}
+
+.col_md_login > h2 {
+  	font-weight: 400;
+	margin-top: 70px;
+    color: #757575;
+}
+
+.col_md_login > p {
+ 	font-weight: 400;
+	margin-top: 15px;
+	width: 80%;
+    color: #37474F;
+}
+.btn_login { 
+	background-color: #FF9800;
+  	border: none;
+  	padding: 10px;
+	width: 200px;
+	border-radius:3px;
+	box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  	color: #fff;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.col-md-sign, .col-md-login{
+	position: relative;
+  	float: left;
+  	width: 50%; 
+}
+.cotn_sign_opcity > h2, .cotn_login_opcity > h2 {
+	font-weight: 400;
+  	color: #fff;
+}
+.cotn_sign_opcity > p, .cotn_login_opcity > p {
+	font-weight: 400;
+	margin-top: 15px;
+ 	color: #fff;
+}
+.cotn_sign_opcity, .cotn_login_opcity{
+	position: relative;
+  	background-color: rgba(187, 168, 170, 0.79);
+  	width: 80%;
+  	border-radius:3px ;
+	margin-top: 60px;
+	padding: 15px 0px;
+}
+
+.btn_sign{
+	background-color: #f44336;
+  	border: none;
+  	padding: 10px;
+	width: 200px;
+	border-radius:3px;
+	box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  	color: #fff;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+
+
+.cotn_form_login{
+	position: absolute;
+  	opacity: 0;
+	display: none;
+  	width: 320px;
+  	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.cotn_form_sign{
+	position: absolute;
+  	width: 320px;
+	float: left;
+  	opacity: 0;
+	display: none;
+  	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.cotn_form_sign > input {
+	text-align: left;
+  	padding: 15px 5px;
+	margin-left: 10px;
+	margin-top: 20px;
+  	width: 260px;
+	border: none;
+    color: #757575;
+}
+.cotn_form_sign > h2 {
+	margin-top: 50px; 
+	font-weight: 400;
+  	color: #757575;
+}
+.cotn_form_login > input {
+	padding: 15px 5px;
+	margin-left: 10px;
+	margin-top: 20px;
+  	width: 260px;
+	border: none;
+	text-align: left;
+  	color: #757575;
+}
+.cotn_form_login > h2 {
+margin-top: 110px; 
+font-weight: 400;
+  color: #757575;
+}
+.cotn_form_login > a, .cotn_form_sign > a  {
+  	color: #757575;
+    position: relative;
+    float: left;
+    margin: 10px;
+	margin-left: 30px;
+}
+.cotn_form_active_login {
+box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  height: 420px;  
+top:20px;
+left: 0px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+
+}
+
+.cotn_form_active_sign_up {
+box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  height: 420px;  
+top:20px;
+left:320px;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+.cotn_form_active_login > .cotn_img_back_ {
+top:0px;  
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+.cotn_form_active_sign_up > .cotn_img_back_ {
+top:0px;  
+left: -435px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+.cotn_form_active_sign_up {
+z-index: 2;  
+}
+.cotn_form_active_login {
+z-index: 2;  
+}
+
+
+
+
